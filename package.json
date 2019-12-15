@@ -7,10 +7,16 @@
   "author": "wanbinkimoon <nicola.bertelloni@gmail.com>",
   "license": "GNU2",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack/webpack.dev.js",
-    "build": "webpack --config ./webpack/webpack.prod.js"
+    "start": "webpack-dev-server --inline --progress --config ./webpack/webpack.dev.js",
+    "build": "webpack --hide-modules -p --config ./webpack/webpack.prod.js"
   },
   "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.5",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.3.2",
     "html-webpack-plugin": "^3.2.0",
@@ -19,5 +25,8 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "p5": "^0.10.2"
   }
 }

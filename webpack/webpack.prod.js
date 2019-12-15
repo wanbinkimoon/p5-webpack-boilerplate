@@ -24,7 +24,11 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: '🍊- p5 webpack sketchbook',
+      template: path.join(__dirname, '../src/index.html'),
+      inject: 'head',
+    }),
 
     new CleanWebpackPlugin(['dist'], {
       root: __dirname,
