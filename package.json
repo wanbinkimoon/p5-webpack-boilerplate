@@ -1,0 +1,23 @@
+{
+  "name": "p5-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "yet nother boilerplate",
+  "main": "index.js",
+  "repository": "git@github.com:wanbinkimoon/p5-webpack-boilerplate.git",
+  "author": "wanbinkimoon <nicola.bertelloni@gmail.com>",
+  "license": "GNU2",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack/webpack.dev.js",
+    "build": "webpack --config ./webpack/webpack.prod.js"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.3.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
